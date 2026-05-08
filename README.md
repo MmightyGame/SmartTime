@@ -1,4 +1,4 @@
-# <h1> <img src="MainLogo.png" width="60"> SmartTime </h1>
+# <h1> <img src="Logo.png" width="60"> SmartTime </h1>
 
 Stop guessing where your time goes.
 
