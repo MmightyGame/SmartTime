@@ -1,35 +1,40 @@
-Last updated: April 28, 2026
+Last updated: October 12, 2026
 
 1. Acceptance of Terms
     By downloading or using SmartTime, you agree to these Terms. If you do not agree, do not use the App.
 2. Description of Service
     SmartTime is a personal productivity application.
-    The App records application names and time spent on each app.
-    All activity data is stored locally on your device and is not transmitted to any external server.
+    The App records the applications you use, their window titles, the projects you work on and the time you spend on each.
+    Activity data is stored locally on your device. It is sent elsewhere only by optional features that you turn on yourself, such as the weekly report email and sync between your devices. The Privacy Policy describes what each one sends.
 3. User Accounts
     You must create an account to use certain features.
     You are responsible for maintaining the security of your account credentials.
     We may suspend or terminate accounts that violate these Terms.
 4. User Consent
     By using the App, you explicitly agree that SmartTime will track application usage and time spent for productivity analysis.
-5. Acceptable Use
+5. Sync and Your Passphrase
+    Sync between your devices is optional.
+    Synced data is encrypted on your device with a passphrase that you choose. We never receive it and cannot reset it.
+    You are responsible for choosing a passphrase strong enough for your needs and for keeping your passphrase and recovery key safe. If you lose both, the synced copy cannot be recovered. Data stored on your own devices is not affected.
+6. Acceptable Use
     You agree to use the App only for lawful purposes.
     You may not reverse-engineer, copy, or redistribute the App without permission.
-6. Third-Party Services
-    The App uses Firebase services provided by Google for authentication and storing user preferences.
+7. Third-Party Services
+    The App uses Firebase services provided by Google for authentication and for storing account data, preferences, weekly report summaries and encrypted sync data.
+    It also uses Resend to deliver the weekly report email, Cloudinary to store profile photos, Hyp (YaadPay) to take payments for paid plans, and GitHub to deliver updates.
     By using the App, you also agree to Google’s applicable terms and policies.
-7. No Warranty
+8. No Warranty
     The App is provided “as is”.
     We do not guarantee that the App will be error-free, secure, or uninterrupted.
-8. Limitation of Liability
+9. Limitation of Liability
     To the maximum extent permitted by law, we are not liable for any indirect or consequential damages.
-9. Termination
+10. Termination
     We may suspend or terminate your access at any time if you violate these Terms.
-10. Governing Law
+11. Governing Law
     These Terms are governed by the laws of Israel.
-11. Changes to Terms
+12. Changes to Terms
     We may update these Terms at any time. Continued use means acceptance of the updated Terms.
-12. Age
+13. Age
     This App is not intended for users under the age of 13.
-13. Contact
-    For questions, ask via Github or email us at support@smartime.online.
+14. Contact
+    For questions, ask via GitHub or email us at support@smartime.online.

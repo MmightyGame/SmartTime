@@ -1,52 +1,94 @@
-Last updated: May 2, 2026
+Last updated: October 12, 2026
 
 0. Our core principle
-SmartTime collects minimal data. Most data stays on your device.
+SmartTime collects as little as it can. Your tracked activity is stored on your own computer. It leaves your computer only through features you turn on yourself, and each of them is described below.
 
-1. Data we collect
+1. Data stored on your computer
+**Activity data.** For each stretch of time you spend in an app, SmartTime records:
+- Application name and process name
+- Window title
+- Project name and, where the app has one, the timeline, sequence or session name
+- Start time, end time and duration
+- Whether you were idle
+This is kept in a database file on your computer. It is not uploaded unless you turn on one of the optional features in section 3.
 
-  Account data (stored in Cloud):
-    • Email address
-    • Display name
-    • Profile photo URL
-    • Account creation date
-    • Last Login
-  This data is used only for authentication and account management.
+**Names read from other apps.** To put time on the right project, SmartTime reads a few details that other apps keep on your computer: the session names, folder names and timestamps of your Claude Code and Codex sessions, and, if you install the SmartTime plugins, the project, timeline and sequence names from DaVinci Resolve and Adobe Premiere Pro. These are read on your computer and saved with your activity data. SmartTime does not read the content of your files, code or conversations, with one exception: when a Claude session has no title, the first 60 characters of its first prompt are used as its name.
 
-  App category preferences (stored in cloud):
-    • Your classification of apps as Productive, Neutral, or Distracting
-  Stored under your account to sync across devices.
+**Local settings.** App preferences such as idle threshold, blocked apps and daily goal.
 
-2. Data we do NOT collect
-  User data we do NOT collect
-  • Document content
-  • Screenshots or recordings
-  • Keystrokes or mouse activity
-  • Any analytics or advertising data
-  Activity data (stored locally only):
-    • Application name
-    • Process name
-    • Session start and end time
-    This data is stored locally on your device and never uploaded.
-  Local settings (stored locally only):
-    • App preferences such as refresh interval and idle threshold
-3. How we use data
-  • To provide account access
-  • To sync preferences across devices
-  • To enable productivity tracking locally
-4. Data sharing
-  We do not sell or share your data.
-  Data is only processed by Firebase (Google) for authentication and storage for .
-5. Data deletion
-  You can delete your activity data at any time from within the App.
-  You can delete your account, which removes all cloud data associated with it.
-6. Security
-  We take reasonable measures to protect your data.
-  However, no system is completely secure.
-7. Age
-  This App is not intended for users under the age of 13.
-8. Updates
-  The App may check for updates via GitHub.
-  Your IP address may be visible to GitHub during this process.
-9. Contact
-  For privacy questions, contact via Github or email us at support@smartime.online.
+2. Data stored in the cloud
+**Account data:**
+- Email address
+- Display name
+- Profile photo URL
+- Profile details you choose to enter: bio, job title, company and time zone
+- Account creation date and last sign-in date
+- The SmartTime version you last used
+This data is used only for sign-in and account management.
+
+**Preferences**, stored under your account so they follow you between devices:
+- Your classification of apps as Productive, Neutral or Distracting, which includes the names of those apps
+- Theme, language, accent colour and sidebar setting
+- Your onboarding answers: role, goal and hourly rate
+- Your weekly report setting: on or off, day and hour
+
+**Profile photo.** If you upload a profile photo, the image is stored with Cloudinary.
+
+3. Optional features that send data
+These are off until you turn them on.
+
+**Weekly report email.** If you turn it on, SmartTime uploads a summary of your week so the email can be built: total and daily active time, your productivity score, your top apps and top projects by name with the time spent on each, your most distracting apps, and earnings per project if you set an hourly rate. Window titles are not included. The email is sent to your account email address through Resend. Every email has an unsubscribe link, and you can turn the feature off in the app at any time.
+
+**Sync between your devices.** If you turn it on, the activity data listed in section 1 is uploaded so your other devices can show it. It is encrypted on your computer before it is uploaded, with a key locked by a passphrase you choose. We never receive the passphrase or the key, so neither we nor our administrators can read your synced data. This protection is only as strong as your passphrase: a short one is easier to guess, so choose a long one. If you lose both your passphrase and your recovery key, the synced copy cannot be recovered by anyone. The data on each of your computers is not affected.
+
+**Paid plans.** If you buy a paid plan, the payment is made on a page run by Hyp (YaadPay). We never see or store your card details. We keep a record of your subscription status and of the payments made.
+
+4. Data we do NOT collect
+- The content of your documents, files or code
+- Screenshots or screen recordings
+- Keystrokes or mouse movements
+- Analytics, advertising or crash-reporting data
+
+5. How we use data
+- To sign you in and manage your account
+- To keep your preferences the same on all your devices
+- To send the weekly report email, if you turned it on
+- To show your devices together, if you turned on sync
+- To calculate your productivity statistics, which happens on your computer
+
+6. Data sharing
+We do not sell your data and we do not share it for advertising.
+Data is processed only by the services SmartTime runs on:
+- Google Firebase: sign-in, and storage of the cloud data described above
+- Google: sign-in with Google, if you choose it
+- Resend: delivery of the weekly report email
+- Cloudinary: storage of profile photos
+- Hyp (YaadPay): payments for paid plans
+- GitHub: app updates, and the text of this policy and of the Terms
+SmartTime administrators can view account data, preferences and weekly report summaries in order to support and manage accounts. They cannot access synced activity data.
+
+7. Data deletion
+- You can delete your activity history at any time from within the App. This removes it from your computer.
+- You can turn off sync and delete the encrypted cloud copy at any time from within the App.
+- You can turn off the weekly report at any time, in the App or with the link in any report email.
+- You can delete your account from within the App. Your synced data, weekly report summaries and preferences are deleted and you are signed out. Anything that remains, along with your account details and your sign-in, is then removed by us. That last step is done by hand, so it is not instant.
+- A profile photo you uploaded is not removed automatically. Email us and we will remove it.
+- Records of payments may be kept where the law requires it.
+- Deleting your account does not delete the activity data stored on your computer. Delete your history in the App, or choose to remove data when you uninstall.
+
+8. Security
+We take reasonable measures to protect your data.
+However, no system is completely secure.
+
+9. Age
+This App is not intended for users under the age of 13.
+
+10. Updates
+The App checks GitHub for updates, and loads this policy and the Terms from GitHub.
+Your IP address is visible to GitHub when it does.
+
+11. Changes to this policy
+We may update this policy. The date at the top shows when it last changed.
+
+12. Contact
+For privacy questions, contact us via GitHub or email us at support@smartime.online.
